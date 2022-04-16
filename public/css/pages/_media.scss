@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    .container-media {
+        width: 100vw;
+        height: 100vh;
+        padding: 0rem;
+        background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(35,39,35,1) 100%);
+            h1{
+                color: $white;
+                padding: 1rem;
+            }
+            .containercovers{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 1rem;
+                padding: 1rem;
+            }
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+.main{
+    display: flex;
+    .container-media {
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+        background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(35,39,35,1) 100%);
+            h1{
+                color: $white;
+            }
+            .containercovers{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+                grid-gap: 1rem;
+            }
+    }
+}
+}

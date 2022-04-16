@@ -1,0 +1,46 @@
+.back{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.container-login {
+    height: 100vh;
+    padding: 0rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo {
+        width: 100%;
+        margin: 1rem 0rem;
+        z-index: 2;
+    }
+    button{
+        z-index: 2;
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+    .back{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+    }
+.container-login {
+    height: 100vh;
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo {
+        width: 30%;
+        margin: 3rem 0rem;
+        z-index: 2;
+    }
+    button{
+        z-index: 2;
+    }
+}
+}

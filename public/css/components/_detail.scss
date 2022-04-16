@@ -1,0 +1,126 @@
+.detail {
+    height: 40vh;
+    background: linear-gradient(180deg, rgb(161, 161, 161, 0.3) 0%, rgb(165, 165, 165, 0.3) 0%, rgba(35,39,35,0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem;
+    .coveralbum {
+        width: auto;
+        height: 175px;
+        box-shadow: 1px 1px 5px black;
+        margin: 1rem;
+    }
+    .albumtext {
+        text-transform: uppercase;
+        color: white;
+        margin: 0;
+        font-size: 12px;
+    }
+    .title{
+        margin: 0;
+        font-size: 5vw;
+        color: white;
+    }
+}
+.tracks{
+    color: white;
+    background-color: $black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    .titletracks{
+        color: gray
+    }
+    .hr{
+        margin: 1rem 0rem;
+        width: 100%;
+        height: 0.1px;
+        background-color: gray;
+    }
+    .song{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $black;
+        padding: 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease;
+        &:hover{
+            background-color: $black-light;
+        }
+    }
+}
+.copyright{
+    font-size: 10px;
+    color: white;
+}
+.more {
+    color: white;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+@media screen and (min-width: $breakpoint-md) {
+.detail {
+    height: 40vh;
+    background: linear-gradient(180deg, rgb(161, 161, 161, 0.3) 0%, rgb(165, 165, 165, 0.3) 0%, rgba(35,39,35,0.2) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 2rem;
+    .coveralbum {
+        width: auto;
+        height: 175px;
+        box-shadow: 1px 1px 5px black;
+        margin: 1rem;
+    }
+    .albumtext {
+        text-transform: uppercase;
+        color: white;
+        margin: 0;
+        font-size: 12px;
+    }
+    .title{
+        margin: 0;
+        font-size: 5vw;
+        color: white;
+    }
+}
+.tracks{
+    color: white;
+    background-color: $black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    .titletracks{
+        color: gray
+    }
+    .hr{
+        margin: 1rem 0rem;
+        width: 100%;
+        height: 0.1px;
+        background-color: gray;
+    }
+    .song{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $black;
+        padding: 0.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease;
+        &:hover{
+            background-color: $black-light;
+        }
+    }
+}
+.copyright{
+    font-size: 10px;
+    color: white;
+}
+.more {
+    color: white;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+}

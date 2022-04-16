@@ -1,0 +1,117 @@
+.header {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    .menu{
+        width: 30px;
+    }
+    .profile {
+        width: 150px;
+        height: 34px;
+        background-color: $black;
+        border-radius: 100px;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+        cursor: pointer;
+        .picture{
+            width: 30px;
+            height: 30px;
+            margin: 1px;
+        }
+        .triangule {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 0 10px;
+            border-color: $secondary-light transparent transparent transparent;            
+            margin: 10px;
+        }
+        .triangule-invert {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent $secondary-light transparent;
+            margin: 10px;
+        }
+        .detailprofile {
+            position: absolute;
+            right: 1rem;
+            top: 3.5rem;
+            width: 155px;
+            height: auto;
+            padding: 0.5rem;
+            background-color: $black-light;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px black;
+            z-index: 100;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+    .header {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-end;
+        .menu{
+            width: 30px;
+            display: none;
+        }
+        .profile {
+            width: 150px;
+            height: 34px;
+            background-color: $black;
+            border-radius: 100px;
+            margin: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: $white;
+            cursor: pointer;
+            .picture{
+                width: 30px;
+                height: 30px;
+                margin: 1px;
+            }
+            .triangule {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 10px 0 10px;
+                border-color: $secondary-light transparent transparent transparent;            
+                margin: 10px;
+            }
+            .triangule-invert {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 10px;
+                border-color: transparent transparent $secondary-light transparent;
+                margin: 10px;
+            }
+            .detailprofile {
+                position: absolute;
+                right: 3rem;
+                top: 5.5rem;
+                width: 155px;
+                height: auto;
+                padding: 0.5rem;
+                background-color: $black-light;
+                border-radius: 5px;
+                box-shadow: 1px 1px 10px black;
+                z-index: 100;
+            }
+        }
+    }
+}

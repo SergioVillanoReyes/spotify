@@ -1,0 +1,16 @@
+.search {
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+}
+@media screen and (min-width: $breakpoint-md) {
+.search {
+    width: 50%;
+    margin: 0;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+}
+}

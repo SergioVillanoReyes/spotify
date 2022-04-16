@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('/fonts/Gotham-Font/Gotham-Bold.otf');
+  }
+
+$primary : #1DB954;
+$primary-dark: #457e59;
+$secondary : #e1ece3;
+$secondary-light: #a8b2a8;
+$white : #FFFFFF;
+$black-light: #232723;
+$black: #000000;
+
+$font-family:'Gotham-Bold';
+
+$breakpoint-md : 821px;
+$breakpoint-lg : 1460px;
+$breakpoint-sm : 460px;

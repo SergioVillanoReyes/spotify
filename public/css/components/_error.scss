@@ -1,0 +1,20 @@
+.error{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inner {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+}

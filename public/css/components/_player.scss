@@ -1,0 +1,209 @@
+.player{
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: $black-light;
+    border-top: 0.3px solid gray;
+    z-index: 100;
+    .container-player{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .curentSong {
+        display: none;
+        }
+        .controls{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 0.5rem 0rem;
+            .btn-player{
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+            }
+            .shuffle{
+                padding: 5px;
+                background-image: url("/img/shuffle.png");
+            }
+            .pre{
+                padding: 5px;
+                background-image: url("/img/pre.png");
+            }
+            .play{
+                padding: 15px;
+                background-image: url("/img/play.png");
+            }
+            .pause{
+                padding: 15px;
+                background-image: url("/img/pause.png");
+            }
+            .next{
+                padding: 5px;
+                background-image: url("/img/next.png");
+            }
+            .repeat{
+                padding: 5px;
+                background-image: url("/img/repeat.png");
+            }
+        }
+        .bar{
+            width: 90%;
+            margin-bottom: 1rem;
+            .playbar {
+                width: 100%;
+                background: #2c3e38;
+                height: 4px;
+                position: relative;
+                border-radius: 10px;
+    
+                &_inner {
+                    position: absolute;
+                    width: 40%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background:gray;
+                }
+    
+                &_left {
+                    float: left;
+                    position: relative;
+                    top: 8px;
+                }
+    
+                &_right {
+                    position: relative;
+                    top: 8px;
+                    float: right;
+                }
+    
+                span {
+                    color: white;
+                    font-size: 10px;
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-md) {
+.player{
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: $black-light;
+    border-top: 0.3px solid gray;
+    .container-player{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .curentSong {
+            width: auto;
+            height: 100px;
+            position: absolute;
+            left: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            img{
+                margin: 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+            }
+        }
+        .volume{
+            position: absolute;
+            right: 3rem;
+            width: 20vw;
+            height: 40px;
+            margin-top: 1.8rem
+        }
+        .controls{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 0.5rem 0rem;
+            .btn-player{
+                width: 20px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+            }
+            .shuffle{
+                padding: 5px;
+                background-image: url("/img/shuffle.png");
+            }
+            .pre{
+                padding: 5px;
+                background-image: url("/img/pre.png");
+            }
+            .play{
+                padding: 15px;
+                background-image: url("/img/play.png");
+            }
+            .pause{
+                padding: 15px;
+                background-image: url("/img/pause.png");
+            }
+            .next{
+                padding: 5px;
+                background-image: url("/img/next.png");
+            }
+            .repeat{
+                padding: 5px;
+                background-image: url("/img/repeat.png");
+            }
+        }
+        .bar{
+            width: 40%;
+            margin-bottom: 1rem;
+            .playbar {
+                width: 100%;
+                background: #2c3e38;
+                height: 4px;
+                position: relative;
+                border-radius: 10px;
+    
+                &_inner {
+                    position: absolute;
+                    width: 40%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background:gray;
+                }
+    
+                &_left {
+                    float: left;
+                    position: relative;
+                    top: 8px;
+                }
+    
+                &_right {
+                    position: relative;
+                    top: 8px;
+                    float: right;
+                }
+    
+                span {
+                    color: white;
+                    font-size: 10px;
+                }
+    
+            }
+        }
+    }
+}
+}
