@@ -5,7 +5,7 @@ import "/public/scss/style.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Iniciar sesión - Spotify",
+  title: "Dashboard - Spotify",
   description: "App for testing",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/img/favicon.png" sizes="any" />
+      <link rel="icon" href="/img/green-logo.png" sizes="any" />
       <body className={inter.className}>{children}</body>
     </html>
   );

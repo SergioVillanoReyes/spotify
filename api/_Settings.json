@@ -1,0 +1,7 @@
+{
+	"name": "Spotify",
+	"base_url_login": "https://accounts.spotify.com/api",
+	"base_url": "https://api.spotify.com/v1",
+	"client_id": "891b8971649448cd97adfa4e33ffe5cc",
+	"client_secret": "786d534955dc439f8cb083cba63b5920"
+}

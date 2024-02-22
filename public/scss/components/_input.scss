@@ -1,0 +1,27 @@
+.input-container {
+    margin: 0.5rem 0rem;
+    label {
+        .label {
+            color: $white;
+            font-size: $font-size-small;
+            margin-bottom: 0.5rem;
+        }
+        .input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: $border;
+            background-color: $black;
+            inline-size: 100%;
+            box-sizing: border-box;
+            color: $white;
+        }
+        .input:focus {
+            outline: none;
+            border: $white 2px solid;
+        }
+    }
+    .input-error {
+        font-size: $font-size-small;
+        color: $danger;
+    }
+}

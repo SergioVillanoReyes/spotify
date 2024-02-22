@@ -7,13 +7,19 @@
 $primary : #1DB954; 
 $primary-dark: #1ed760;
 $secondary : #B3B3B3;       
+$secondary-dark: #424242;
 $secondary-light: #EBEBEB;
 $white : #FFFFFF;
-$black: #191414;
+$black: #121212;
+$danger: #a62c2c;
 
 $font-family-medium: 'Circular Spotify - Medium';
-$font-size-titles: 24px;
+$font-size-titles: 28px;
+$font-size-headers: 24px;
 $font-size-texts: 18px;
+$font-size-small: 14px;
+
+$border: solid gray 0.5px;
 
 $breakpoint-sm : 576px;
 $breakpoint-md : 992px;
