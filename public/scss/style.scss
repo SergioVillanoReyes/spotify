@@ -6,9 +6,29 @@
     font-size: $font-size-texts;
   }
 
+body {
+  background-color: $black;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
+.unmounted {
+  border-radius: 10px;
+  background: linear-gradient(to right, #333, #8b8b8b, #2f2f2f); 
+  color: transparent !important;
+  animation: gradientAnimation 2s infinite alternate;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 70% 80%; }
+}
+
 @import 'pages/pages';
 @import 'components/components';

@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'Circular Spotify - Light';
+    src: url('/fonts/CircularSpotifyText-Light.otf');
+};
+
+@font-face {
     font-family: 'Circular Spotify - Medium';
     src: url('/fonts/CircularSpotifyText-Medium.otf');
 };
@@ -7,17 +12,26 @@
 $primary : #1DB954; 
 $primary-dark: #1ed760;
 $secondary : #B3B3B3;       
-$secondary-dark: #424242;
+$secondary-dark: #303030;
 $secondary-light: #EBEBEB;
 $white : #FFFFFF;
 $black: #121212;
+$dark: #000000;
 $danger: #a62c2c;
 
+$gradient: linear-gradient(to top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.6));
+
+$shadow: 5px 5px 10px $dark;
+
+$font-family-light: 'Circular Spotify - Light';
 $font-family-medium: 'Circular Spotify - Medium';
+
+
 $font-size-titles: 28px;
 $font-size-headers: 24px;
 $font-size-texts: 18px;
 $font-size-small: 14px;
+$font-size-tiny: 11px;
 
 $border: solid gray 0.5px;
 

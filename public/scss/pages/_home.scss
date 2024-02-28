@@ -1,0 +1,23 @@
+.home {
+    background-color: $black;
+    .home-content {
+        padding: 0.5rem 0.8rem;
+        .home-greetin {
+            margin: 1.5rem 0rem;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+    .home {
+        display: flex;
+        background-color: $dark;
+        .home-content {
+            background-color: $black;
+            width: 80%;
+            margin: 0.5rem;
+            border-radius: 10px;
+            margin-left: 20.5%;
+        }
+    }
+}

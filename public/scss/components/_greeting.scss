@@ -1,0 +1,8 @@
+.greeting {
+    display: flex;
+    align-items: center;
+    .greeting-text {
+        color: $white;
+        font-size: $font-size-titles;
+    }
+}

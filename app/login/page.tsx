@@ -1,9 +1,9 @@
-'use client';
-import React, { useState, useEffect, ChangeEvent, FormEvent } from 'react';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import Input from '@/components/Input';
-import apiLogin from "@/api/Login";
+"use client";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Input from "@/components/Input";
+import { urlAuth } from "@/api/Login";
 import { setToken, getToken } from "@/utils/AuthStorage";
 
 interface LoginData {
@@ -12,22 +12,22 @@ interface LoginData {
 }
 
 const Login: React.FC = () => {
+  const router = useRouter();
+
   const [errors, setErrors] = useState<LoginData>({
-    user: '',
-    pass: '',
+    user: "",
+    pass: "",
   });
   const [dataLogin, setDataLogin] = useState<LoginData>({
-    user: '',
-    pass: '',
+    user: "",
+    pass: "",
   });
   const [sendData, setSendData] = useState(false);
 
-  const router = useRouter();
-
-  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const onChange = (e: ChangeEvent<HTMLInputElement>):void => {
     setErrors({
-      user: '',
-      pass: '',
+      user: "",
+      pass: "",
     });
     setDataLogin({
       ...dataLogin,
@@ -35,7 +35,7 @@ const Login: React.FC = () => {
     });
   };
 
-  const handleSubmit = async(e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async(e: FormEvent<HTMLFormElement>):Promise<void> => {
     e.preventDefault();
     if(dataLogin.user.length < 1 || dataLogin.pass.length < 1){
       setErrors({
@@ -46,22 +46,20 @@ const Login: React.FC = () => {
       return;
     }
     try {
-      const resp = await apiLogin();
-      if(resp?.data){
-        setSendData(!sendData);
-        setToken(resp.data.access_token);
-      }
+      setSendData(!sendData);
+      const url = urlAuth;
+      window.location.href = url;
     } catch (error) {
-      console.log('error', error);
+      console.log("error", error);
     }
   };
 
   useEffect(() => {
     const token = getToken();
-    if(token !== null){
-      router.push("/dashboard");
+    if (token !== null){
+      router.push("/");
     }
-  }, [sendData, router]);
+  }, []);
 
   return(
     <div className="container-login">

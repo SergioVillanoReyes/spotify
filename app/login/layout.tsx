@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "/public/scss/style.scss";

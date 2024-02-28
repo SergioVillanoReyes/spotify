@@ -1,17 +1,26 @@
 import ConstructorLogin from "./ConstructorLogin";
 import settings from "./_Settings.json";
 
-const { client_id, client_secret } = settings;
+const { client_id, client_secret, scope, redirect_uri, base_url_login } = settings;
 
 const API = ConstructorLogin();
 
-const apiLogin = async () => {
-  const data = { grant_type: "client_credentials", client_id, client_secret };
+const apiGetToken = async (code) => {
+  const data = { 
+    grant_type: "authorization_code", 
+    client_id, 
+    client_secret, 
+    redirect_uri,
+    code
+  };
   try {
-    return await API.post("/token", data );
+    return await API.post("/api/token", data );
   } catch (error) {
-    console.log('error', error);
+    console.log("error", error);
   }
 };
 
-export default apiLogin;
+const urlAuth = `${base_url_login}/authorize?client_id=${client_id}&response_type=code&redirect_uri=${encodeURIComponent(redirect_uri)}&scope=${scope}&show_dialog=true`;
+
+export default apiGetToken;
+export { urlAuth };

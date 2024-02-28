@@ -1,0 +1,54 @@
+.sidenavigation {
+   display: none;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+    .sidenavigation {
+        display: block;
+        width: 20%;
+        position: fixed;
+        .sidenavigation-topbox {
+            background-color: $black;
+            margin: 0.5rem 0.1rem 0.5rem 0.5rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            .sidenavigation-row {
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+                color: $secondary;
+                transition: 0.2s ease-in-out all;
+                cursor: pointer;
+                .sidenavigation-icon {
+                    margin-right: 1rem;
+                }
+            }
+            .sidenavigation-row:hover {
+                color: $white;
+            }
+        }
+        .sidenavigation-box {
+            background-color: $black;
+            margin: 0.5rem 0.1rem 0.5rem 0.5rem;
+            border-radius: 10px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            .sidenavigation-row {
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+                color: $secondary;
+                transition: 0.2s ease-in-out all;
+                cursor: pointer;
+                .sidenavigation-icon {
+                    margin-right: 1rem;
+                }
+            }
+            .sidenavigation-row:hover {
+                color: $white;
+            }
+        }
+    }
+}
